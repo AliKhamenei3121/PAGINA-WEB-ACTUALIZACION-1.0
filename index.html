@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="NOCTHRAX | Perú — Servicios Digitales, Social Growth & Inteligencia de Datos.">
+<meta name="theme-color" content="#0a0503">
+
+<!-- LOGO FAVORITO (FAVICON) SVG RED NOCTHRAX -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23ff4500' d='M50 5 L85 20 L80 55 C78 75 50 95 50 95 C50 95 22 75 20 55 L15 20 Z'/><path fill='%23ffffff' d='M30 40 L45 45 L35 55 Z M70 40 L55 45 L65 55 Z'/></svg>">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="NOCTHRAX | PERÚ — Silencio. Precisión. Resultados.">
+<meta property="og:description" content="Servicios digitales avanzados, aceleración de redes sociales e inteligencia de datos.">
+
+<title>NOCTHRAX | PERÚ — Silencio. Precisión. Resultados.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg-dark: #070302;
+  --card-bg: rgba(18, 8, 4, 0.85);
+  --text-main: #f5e6d8;
+  --text-muted: #cbb8a9;
+  --accent-orange: #ff5500;
+  --accent-red: #ff1a00;
+  --accent-glow: #ffaa00;
+  --line-border: rgba(255, 85, 0, 0.3);
+  --font-h: "Creepster", "Cinzel", cursive, serif;
+  --font-sub: "Cinzel", serif;
+  --font-b: "Montserrat", sans-serif;
+  --font-m: "Share Tech Mono", monospace;
+  color-scheme: dark;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+
+body, html {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 69, 0, 0.15) 0%, rgba(10, 4, 2, 0.95) 70%), 
+              url('fondodefondo.jpg') center top/cover no-repeat fixed #070302;
+  color: var(--text-main);
+  font: 400 14px/1.6 var(--font-b);
+  touch-action: pan-x pan-y;
+  -webkit-text-size-adjust: 100%;
+}
+
+a { color: inherit; text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0; left: 0; right: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+  background: rgba(10, 4, 2, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 85, 0, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.brand-tlou { display: flex; align-items: center; gap: 10px; }
+.brand-logo-icon { width: 34px; height: 34px; filter: drop-shadow(0 0 10px rgba(255, 85, 0, 0.9)); }
+.brand-text { display: flex; flex-direction: column; }
+.brand-tlou .title { 
+  font-family: var(--font-h); 
+  font-weight: 900; 
+  font-size: 24px; 
+  letter-spacing: 2px; 
+  color: #fff; 
+  line-height: 1; 
+  text-shadow: 0 0 12px var(--accent-orange);
+}
+.brand-tlou .sub { 
+  font-size: 8px; 
+  font-weight: 700; 
+  letter-spacing: 3px; 
+  color: var(--accent-glow); 
+  margin-top: 2px; 
+  font-family: var(--font-sub);
+}
+
+.header-right { display: flex; align-items: center; gap: 12px; }
+
+/* ESTILO BOTÓN PÍLDORA COMO EN LA FOTO 1 */
+.header-search {
+  display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 11px;
+  font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+  color: #fff; transition: 0.3s; padding: 8px 22px;
+  border-radius: 30px; 
+  background: rgba(10, 4, 2, 0.6); 
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 12px rgba(255, 85, 0, 0.2);
+}
+.header-search:hover { 
+  color: #ffaa00; 
+  border-color: var(--accent-orange); 
+  background: rgba(255, 85, 0, 0.15); 
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.6);
+}
+
+.btn-menu-icon {
+  width: 42px; height: 42px; border-radius: 12px; background: rgba(255,85,0,0.1);
+  border: 1px solid var(--line-border); color: #fff; display: grid; place-items: center;
+  font-size: 18px; cursor: pointer; transition: 0.3s;
+  box-shadow: inset 0 0 8px rgba(255,85,0,0.2);
+}
+.btn-menu-icon:hover { 
+  border-color: var(--accent-orange); 
+  color: var(--accent-glow); 
+  background: rgba(255, 85, 0, 0.25); 
+  box-shadow: 0 0 15px rgba(255, 85, 0, 0.5);
+}
+
+.search-overlay {
+  position: fixed; top: 70px; left: 0; width: 100%; background: rgba(8, 3, 1, 0.96);
+  backdrop-filter: blur(20px); border-bottom: 2px solid var(--accent-orange); padding: 20px 4vw;
+  z-index: 90; display: none; flex-direction: column; gap: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.95);
+}
+.search-overlay.open { display: flex; }
+.search-input-wrap { position: relative; width: 100%; max-width: 900px; margin: 0 auto; }
+.search-input-wrap input {
+  width: 100%; padding: 14px 20px; background: rgba(0,0,0,0.85); border: 1px solid var(--accent-orange);
+  border-radius: 30px; color: #fff; font-size: 15px; box-shadow: inset 0 0 10px rgba(255,85,0,0.2);
+}
+.search-input-wrap input:focus { outline: none; border-color: var(--accent-glow); box-shadow: 0 0 18px rgba(255, 170, 0, 0.6); }
+.search-results { max-width: 900px; width: 100%; margin: 0 auto; max-height: 250px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+.search-item {
+  padding: 12px 16px; background: rgba(255,85,0,0.06); border: 1px solid rgba(255,85,0,0.15); border-radius: 8px; cursor: pointer;
+  font-size: 12px; font-weight: 600; display: flex; justify-content: space-between; transition: 0.2s;
+}
+.search-item:hover { background: rgba(255, 85, 0, 0.25); border-color: var(--accent-orange); color: #fff; }
+
+/* MENÚ LATERAL (SIDEBAR) HALLOWEEN */
+.sidebar {
+  position: fixed; 
+  top: 0; 
+  right: -420px; 
+  width: 380px; 
+  max-width: 90vw; 
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(12, 5, 2, 0.94) 0%, rgba(5, 2, 1, 0.98) 100%), 
+              url('3.jpg') center top/cover no-repeat #070302;
+  border-left: 1.5px solid var(--accent-orange); 
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 1000; 
+  transition: right .4s cubic-bezier(.16, 1, .3, 1); 
+  display: flex; 
+  flex-direction: column;
+  padding: 24px 18px; 
+  overflow-y: auto;
+  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.95), -5px 0 20px rgba(255, 85, 0, 0.3);
+}
+.sidebar.open { right: 0; }
+
+.sidebar-header { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 16px; 
+  padding-bottom: 10px; 
+  border-bottom: 1px solid rgba(255, 85, 0, 0.3); 
+}
+.sidebar-header h3 { 
+  font-family: var(--font-h);
+  font-size: 20px; 
+  letter-spacing: 2px; 
+  color: var(--accent-glow); 
+  text-transform: uppercase; 
+  margin: 0; 
+  font-weight: 400; 
+  text-shadow: 0 0 10px rgba(255, 85, 0, 0.6);
+}
+.close-btn { 
+  background: rgba(0,0,0,0.6); 
+  border: 1px solid var(--accent-orange); 
+  border-radius: 50%;
+  width: 34px; height: 34px;
+  color: #fff; 
+  font-size: 16px; 
+  cursor: pointer; 
+  display: grid;
+  place-items: center;
+  transition: 0.3s ease;
+}
+.close-btn:hover {
+  background: var(--accent-orange);
+  color: #000;
+  transform: rotate(90deg);
+  box-shadow: 0 0 15px var(--accent-orange);
+}
+
+.social-section { margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid rgba(255, 85, 0, 0.2); }
+.social-section-title { font-size: 10px; letter-spacing: 2px; color: var(--accent-glow); font-weight: 800; text-transform: uppercase; margin-bottom: 8px; font-family: var(--font-sub); }
+
+/* ESTILO BOTÓN CON GRADIENTE DE FUEGO FOTO 2 */
+.social-link {
+  display: flex; align-items: center; justify-content: space-between; padding: 11px 14px;
+  margin-bottom: 8px; 
+  background: linear-gradient(90deg, rgba(30, 10, 4, 0.9) 0%, rgba(15, 5, 2, 0.9) 100%); 
+  border: 1px solid rgba(255, 85, 0, 0.35);
+  border-radius: 8px; font-weight: 700; font-size: 11px; transition: 0.3s;
+  color: #fff;
+  box-shadow: inset 0 0 10px rgba(255, 69, 0, 0.15);
+}
+.social-link:hover { 
+  background: linear-gradient(90deg, rgba(255, 85, 0, 0.4) 0%, rgba(180, 30, 0, 0.5) 100%); 
+  border-color: var(--accent-glow); 
+  color: #fff; 
+  transform: translateX(-4px); 
+  box-shadow: 0 0 15px rgba(255, 85, 0, 0.4);
+}
+
+.side-item {
+  padding: 12px 14px; border-radius: 8px; margin-bottom: 8px; 
+  background: linear-gradient(90deg, rgba(22, 9, 3, 0.9) 0%, rgba(12, 4, 1, 0.9) 100%);
+  border: 1px solid rgba(255, 85, 0, 0.25); font-weight: 700; font-size: 11px; letter-spacing: 1px;
+  text-transform: uppercase; cursor: pointer; transition: .3s; display: flex; align-items: center; justify-content: space-between;
+  color: var(--text-main);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.side-item:hover { 
+  background: linear-gradient(90deg, rgba(255, 85, 0, 0.3) 0%, rgba(200, 30, 0, 0.4) 100%); 
+  border-color: var(--accent-orange); 
+  color: #fff; 
+  transform: translateX(-4px);
+  box-shadow: 0 0 12px rgba(255, 85, 0, 0.4);
+}
+.sub-menu { display: none; padding-left: 10px; margin-top: 4px; margin-bottom: 8px; border-left: 2px solid var(--accent-orange); }
+.sub-menu.open { display: block; }
+.sub-item { 
+  padding: 8px 12px; font-size: 11px; color: var(--text-muted); cursor: pointer; transition: .2s; border-radius: 6px; margin-bottom: 3px; 
+  background: rgba(15, 6, 2, 0.8); border: 1px solid rgba(255, 85, 0, 0.1);
+}
+.sub-item:hover { color: var(--accent-glow); background: rgba(255, 85, 0, 0.2); border-color: var(--accent-orange); }
+
+.main-fullscreen {
+  min-height: 100vh; width: 100%; display: flex; flex-direction: column;
+  justify-content: space-between; align-items: center; padding-top: 85px; padding-bottom: 15px;
+}
+
+.hero-tlou { 
+  width: 100%; 
+  max-width: 1100px; 
+  padding: 0 4vw; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  margin-bottom: 10px; 
+}
+
+.hero-main-title { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+}
+
+/* TÍTULO HALLOWEEN SEGÚN FOTO 1 */
+.hero-main-title h1 {
+  font-family: var(--font-h); font-size: clamp(42px, 8vw, 105px); font-weight: 400;
+  letter-spacing: 4px; margin: 0; line-height: 0.9; 
+  background: linear-gradient(180deg, #ffffff 0%, #ffaa00 45%, #ff2200 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(255, 68, 0, 0.8));
+}
+
+.hero-main-title .subtitle-part {
+  font-size: clamp(10px, 1.5vw, 13px); letter-spacing: 6px; color: var(--accent-glow);
+  font-weight: 800; margin-bottom: 4px; text-transform: uppercase; font-family: var(--font-sub);
+  text-shadow: 0 0 10px var(--accent-orange);
+}
+
+.hero-description { 
+  max-width: 700px; 
+  color: var(--text-muted); 
+  font-size: 13px; 
+  line-height: 1.5; 
+  margin-top: 10px; 
+}
+
+.hero-description p { margin: 0 0 6px; }
+
+/* CARRUSEL 3D HALLOWEEN */
+.carousel-container {
+  position: relative; 
+  width: 100%; 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  perspective: 1800px; 
+  user-select: none;
+  overflow: hidden; 
+  padding: 15px 0;
+}
+
+.stage-3d { position: relative; width: 100%; max-width: 1400px; height: 450px; display: flex; align-items: center; justify-content: center; transform-style: preserve-3d; }
+
+.card-3d {
+  position: absolute; 
+  width: 370px; 
+  height: 470px; 
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border: 1.5px solid var(--line-border); 
+  border-radius: 24px; 
+  padding: 24px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  box-shadow: 0 35px 80px rgba(0,0,0,.95);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease, filter 0.6s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer; overflow: hidden;
+}
+
+.card-3d::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(10, 4, 2, 0.1) 0%, rgba(10, 4, 2, 0.6) 55%, rgba(10, 4, 2, 0.95) 100%);
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.card-3d.center {
+  transform: translateX(0) scale(1.05) translateZ(160px);
+  opacity: 1; z-index: 10; filter: blur(0);
+  border-color: var(--accent-orange);
+  box-shadow: 0 20px 60px rgba(255, 85, 0, 0.4), 0 0 30px rgba(0,0,0,0.95);
+}
+.card-3d.left-1 { transform: translateX(-430px) scale(0.82) translateZ(-130px) rotateY(16deg); opacity: 0.55; z-index: 5; filter: blur(1.5px); }
+.card-3d.right-1 { transform: translateX(430px) scale(0.82) translateZ(-130px) rotateY(-16deg); opacity: 0.55; z-index: 5; filter: blur(1.5px); }
+.card-3d.left-2 { transform: translateX(-780px) scale(0.62) translateZ(-300px) rotateY(28deg); opacity: 0.15; z-index: 2; filter: blur(5px); }
+.card-3d.right-2 { transform: translateX(780px) scale(0.62) translateZ(-300px) rotateY(-28deg); opacity: 0.15; z-index: 2; filter: blur(5px); }
+.card-3d.hidden { transform: translateX(0) scale(0.4) translateZ(-500px); opacity: 0; z-index: 1; pointer-events: none; }
+
+@media(max-width: 992px) {
+  .card-3d.left-1 { transform: translateX(-260px) scale(0.78) translateZ(-100px); opacity: 0.35; }
+  .card-3d.right-1 { transform: translateX(260px) scale(0.78) translateZ(-100px); opacity: 0.35; }
+}
+
+@media(max-width: 768px) {
+  .card-3d { width: 275px; height: 390px; padding: 18px; border-radius: 20px; }
+  .stage-3d { height: 400px; }
+  .card-3d.center { transform: translateX(0) scale(1) translateZ(0); }
+  .card-3d.left-1 { transform: translateX(-160px) scale(0.72) translateZ(-120px); opacity: 0.2; }
+  .card-3d.right-1 { transform: translateX(160px) scale(0.72) translateZ(-120px); opacity: 0.2; }
+  .card-3d.left-2, .card-3d.right-2 { opacity: 0; pointer-events: none; }
+  .nav-arrow.prev { left: 8px; width: 40px; height: 40px; font-size: 18px; }
+  .nav-arrow.next { right: 8px; width: 40px; height: 40px; font-size: 18px; }
+  .c-body h3 { font-size: 18px; margin-bottom: 4px; }
+  .c-body p { font-size: 10px; margin-bottom: 8px; line-height: 1.3; }
+  .c-btn-solicitar { padding: 12px; font-size: 11px; }
+}
+
+.c-badge, .c-body, .c-btn-solicitar {
+  position: relative;
+  z-index: 2;
+}
+
+.c-badge {
+  align-self: flex-end; font-size: 11px; font-weight: 800; color: #fff;
+  background: rgba(10, 4, 2, 0.85); padding: 5px 12px; border-radius: 20px; border: 1px solid var(--accent-orange);
+  backdrop-filter: blur(10px); box-shadow: 0 0 10px rgba(255, 85, 0, 0.3);
+}
+
+.c-body { 
+  text-align: left; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-end;
+  gap: 8px;
+}
+.c-body h3 { font-size: 22px; font-weight: 800; margin: 0; color: #fff; line-height: 1.2; text-shadow: 0 0 12px rgba(255,85,0,0.8); }
+.c-body p { font-size: 12px; color: var(--text-main); margin: 0; line-height: 1.4; text-shadow: 0 2px 8px rgba(0,0,0,0.9); }
+
+/* BOTÓN SOLICITAR TIPO PÍLDORA CON RESPLANDOR CALABAZA FOTO 1 Y BOTÓN DE FUEGO FOTO 2 */
+.c-btn-solicitar {
+  width: 100%; 
+  padding: 14px 20px; 
+  background: linear-gradient(135deg, #ff5500 0%, #aa1100 100%); 
+  color: #fff; 
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 30px; 
+  font: 800 12px var(--font-b); 
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  cursor: pointer; 
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); 
+  box-shadow: 0 6px 20px rgba(255, 85, 0, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+.c-btn-solicitar:hover { 
+  background: linear-gradient(135deg, #ff7700 0%, #ff2200 100%); 
+  transform: translateY(-2px) scale(1.02); 
+  box-shadow: 0 10px 30px rgba(255, 85, 0, 0.8), 0 0 18px rgba(255, 170, 0, 0.8); 
+  border-color: #fff;
+}
+
+.nav-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%); width: 46px; height: 46px; border-radius: 50%;
+  border: 1px solid var(--accent-orange); background: rgba(10,4,2,0.85); backdrop-filter: blur(12px);
+  color: #fff; font-size: 22px; display: grid; place-items: center; cursor: pointer; z-index: 20; transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+}
+.nav-arrow:hover { background: var(--accent-orange); color: #000; transform: translateY(-50%) scale(1.12); box-shadow: 0 0 20px var(--accent-orange); }
+.nav-arrow.prev { left: 2.5vw; }
+.nav-arrow.next { right: 2.5vw; }
+
+.dots-bar { display: flex; gap: 8px; margin-top: 10px; align-items: center; z-index: 5; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.25); cursor: pointer; transition: 0.3s; }
+.dot.active { width: 24px; border-radius: 4px; background: var(--accent-orange); box-shadow: 0 0 12px var(--accent-orange); }
+
+/* STORE LAYOUT */
+.store-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px 2vw 40px 2vw;
+}
+
+.store-hero {
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center top;
+  border: 1.5px solid var(--accent-orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 20px rgba(255,85,0,0.2);
+  overflow: hidden;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.store-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(10,4,2,0.1) 0%, rgba(10,4,2,0.6) 60%, rgba(10,4,2,0.95) 100%);
+  z-index: 1;
+}
+
+.store-hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  text-align: left;
+  width: 100%;
+}
+
+.store-hero-badge {
+  align-self: flex-start;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+  background: var(--accent-glow);
+  padding: 4px 12px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.store-hero-title {
+  font-family: var(--font-h);
+  font-size: clamp(22px, 5vw, 36px);
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 0 15px rgba(255,85,0,0.8);
+  line-height: 1.1;
+  padding-right: 30px;
+}
+
+.store-hero-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  max-width: 750px;
+  margin: 0;
+}
+
+.store-hero-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.store-hero-price {
+  font-family: var(--font-sub);
+  font-size: clamp(22px, 4vw, 28px);
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 0 12px var(--accent-orange);
+}
+
+.btn-hero-action {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #ff5500 0%, #bb1100 100%);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 20px rgba(255,85,0,0.5);
+}
+.btn-hero-action:hover {
+  background: linear-gradient(135deg, #ff7700 0%, #ff2200 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255,85,0,0.8);
+}
+
+.store-section-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent-glow);
+  margin: 8px 0 4px;
+  text-align: left;
+  font-family: var(--font-sub);
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  max-height: none;
+  overflow-y: visible;
+  padding-bottom: 20px;
+}
+
+.store-card {
+  position: relative;
+  height: 120px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center top;
+  border: 1px solid var(--line-border);
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+.store-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(10,4,2,0.1) 0%, rgba(10,4,2,0.6) 60%, rgba(10,4,2,0.9) 100%);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.store-card.active-card {
+  border-color: var(--accent-glow);
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.7);
+  transform: translateY(-2px);
+}
+
+.store-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.store-card-badge {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent-glow);
+}
+
+.store-card-title {
+  font-weight: 800;
+  font-size: 11px;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+}
+
+.store-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.store-card-price {
+  font-family: var(--font-sub);
+  font-weight: 800;
+  font-size: 11px;
+  color: #fff;
+}
+
+/* MODALES */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(5,2,1,0.92);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); z-index: 2000; display: flex; align-items: center; justify-content: center; padding: 0;
+  opacity: 0; pointer-events: none; transition: 0.3s ease;
+}
+.modal-overlay.active { opacity: 1; pointer-events: auto; }
+
+.calc-box {
+  width: 100vw; height: 100vh; border: none; 
+  background: linear-gradient(180deg, rgba(10, 4, 2, 0.75) 0%, rgba(5, 2, 1, 0.95) 100%), url('7.jpg') center top/cover no-repeat;
+  padding: 16px 3vw; box-shadow: none; border-radius: 0;
+  position: relative; display: flex; flex-direction: column; overflow: hidden;
+}
+.calc-content { 
+  position: relative; z-index: 2; width: 100%; max-width: 1000px; margin: 0 auto; 
+  height: 100%; overflow-y: auto; display: flex; flex-direction: column; justify-content: flex-start; 
+  text-align: left; padding: 30px 10px 50px 10px; -webkit-overflow-scrolling: touch; 
+}
+
+.close-modal { 
+  position: absolute; top: 15px; right: 15px; background: rgba(10,4,2,0.85); 
+  border: 1px solid var(--accent-orange); border-radius: 50%; width: 40px; height: 40px; 
+  color: #fff; font-size: 16px; cursor: pointer; transition: 0.3s; display: grid; place-items: center; z-index: 10;
+  backdrop-filter: blur(10px); box-shadow: 0 0 10px rgba(255,85,0,0.3);
+}
+.close-modal:hover { background: var(--accent-orange); color: #000; transform: rotate(90deg); box-shadow: 0 0 20px var(--accent-orange); }
+
+label { display: block; font: 800 11px var(--font-sub); color: var(--accent-glow); letter-spacing: 1.5px; text-transform: uppercase; margin: 12px 0 5px; text-align: left; }
+
+input[type="number"], input[type="text"], select, input[type="file"] {
+  width: 100%; padding: 12px 16px; border: 1px solid var(--line-border); background: rgba(0,0,0,.85);
+  color: #fff; font: 500 14px var(--font-b); border-radius: 12px; transition: 0.3s;
+  font-size: 14px; text-align: left; box-shadow: inset 0 0 8px rgba(0,0,0,0.8);
+}
+input:focus, select:focus { outline: none; border-color: var(--accent-orange); box-shadow: 0 0 15px rgba(255, 85, 0, 0.5); }
+
+.btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+
+/* BOTONES ESTILO FOTO 2 (Naranjas vibrantes de fuego) */
+.btn-wa, .btn-tg {
+  flex: 1 1 160px; padding: 14px 18px; 
+  border: 1.5px solid rgba(255,255,255,0.4); 
+  background: linear-gradient(135deg, rgba(255, 85, 0, 0.8) 0%, rgba(180, 20, 0, 0.9) 100%);
+  color: #fff; font: 800 11px var(--font-b); letter-spacing: 1.5px; text-transform: uppercase;
+  cursor: pointer; transition: .3s; border-radius: 25px; text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 85, 0, 0.4);
+}
+.btn-wa:hover { background: linear-gradient(135deg, #25d366 0%, #1da851 100%); color: #000; border-color: #25d366; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5); }
+.btn-tg:hover { background: linear-gradient(135deg, #2aabee 0%, #1e87be 100%); color: #fff; border-color: #2aabee; box-shadow: 0 6px 20px rgba(42, 171, 238, 0.5); }
+
+.query-card { text-align: left; width: 100%; max-width: 900px; margin: auto; padding-right: 5px; }
+.query-card .header-title { font-size: clamp(20px, 4.5vw, 30px); font-family: var(--font-h); font-weight: 400; margin: 4px 0 6px; color: #fff; letter-spacing: 1px; text-shadow: 0 0 15px rgba(255,85,0,0.8); text-align: left; line-height: 1.15; padding-right: 35px; }
+.query-card .header-sub { color: var(--text-muted); font-size: 11px; margin-bottom: 14px; line-height: 1.4; text-align: left; }
+.query-grid { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; text-align: left; }
+.query-field { flex: 1 1 200px; text-align: left; }
+
+.btn-search-action {
+  padding: 14px 24px; background: linear-gradient(135deg, #ff5500 0%, #bb1100 100%); color: #fff; border: 1.5px solid rgba(255,255,255,0.5); border-radius: 30px;
+  font-weight: 800; font-size: 11px; letter-spacing: 1.5px; cursor: pointer; transition: 0.3s;
+  display: flex; align-items: center; justify-content: center; gap: 8px; height: 46px; text-transform: uppercase;
+  box-shadow: 0 6px 20px rgba(255, 85, 0, 0.45); min-width: 140px;
+}
+.btn-search-action:hover { background: linear-gradient(135deg, #ff7700 0%, #ff2200 100%); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255, 85, 0, 0.8); }
+
+.sec-alert-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #030100;
+  z-index: 999999; display: none; flex-direction: column; align-items: center; justify-content: center;
+  padding: 30px; text-align: center; box-sizing: border-box; font-family: var(--font-m);
+}
+.sec-alert-overlay.active { display: flex; }
+.sec-title { font-family: var(--font-h); font-size: clamp(36px, 8vw, 75px); color: var(--accent-orange); margin: 0 0 10px; text-shadow: 0 0 35px rgba(255, 85, 0, 0.95); letter-spacing: 5px; font-weight: 400; }
+.sec-demon-icon { width: 120px; height: 120px; margin-bottom: 20px; filter: drop-shadow(0 0 35px rgba(255, 85, 0, 0.95)); animation: demonPulse 2s infinite ease-in-out; }
+
+@keyframes demonPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(255, 85, 0, 0.8)); }
+  50% { transform: scale(1.08); filter: drop-shadow(0 0 45px rgba(255, 170, 0, 1)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(255, 85, 0, 0.8)); }
+}
+
+.sec-subtitle { font-size: 15px; color: #fff; margin-bottom: 18px; letter-spacing: 3px; font-weight: 700; text-transform: uppercase; border-bottom: 1px solid var(--accent-orange); padding-bottom: 8px; font-family: var(--font-sub); }
+.sec-warning { 
+  color: #f5e6d8; font-size: 12px; max-width: 720px; line-height: 1.7; 
+  border: 1px solid var(--accent-orange); padding: 22px 26px; background: rgba(255, 85, 0, 0.08); 
+  border-radius: 12px; margin-top: 10px; letter-spacing: 1px; box-shadow: 0 0 30px rgba(255, 85, 0, 0.2);
+}
+.sec-ip { color: #52eca8; font-size: 11px; margin-top: 22px; background: rgba(0,0,0,0.8); padding: 10px 20px; border-radius: 20px; border: 1px solid rgba(82, 236, 168, 0.3); letter-spacing: 1.5px; }
+
+footer { text-align: center; color: var(--text-muted); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 15px 0; font-family: var(--font-sub); }
+</style>
+</head>
+<body oncontextmenu="triggerSecurity(); return false;">
+
+<header>
+  <div class="brand-tlou">
+    <svg class="brand-logo-icon" viewBox="0 0 100 100">
+      <path fill="#ff5500" d="M50 5 L85 20 L80 55 C78 75 50 95 50 95 C50 95 22 75 20 55 L15 20 Z"/>
+      <path fill="#ffffff" d="M30 40 L45 45 L35 55 Z M70 40 L55 45 L65 55 Z"/>
+    </svg>
+    <div class="brand-text">
+      <span class="title">NOCTHRAX</span>
+      <span class="sub">PERÚ · DIGITAL SERVICES</span>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <div class="header-search" onclick="toggleSearch()" role="button" aria-label="Abrir buscador">
+      <span>Search</span> ⌕
+    </div>
+    <button class="btn-menu-icon" onclick="openSidebar()" aria-label="Catálogo Completo">☰</button>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-input-wrap">
+    <input type="text" id="searchInput" placeholder="Escribe para buscar un servicio (Ej: Métodos, Bots, Reniec, Denuncias, Recetas)..." oninput="filterServices()">
+  </div>
+  <div class="search-results" id="searchResults"></div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <h3>Menú Completo</h3>
+    <button class="close-btn" id="closeSidebar" aria-label="Cerrar menú">✕</button>
+  </div>
+
+  <div class="social-section">
+    <div class="social-section-title">Canales & Redes Oficiales</div>
+    <a href="https://t.me/abrrlador" target="_blank" rel="noopener" class="social-link"><span>✈ Telegram Directo</span> <span>➔</span></a>
+    <a href="https://whatsapp.com/channel/0029Vb8U7H18PgsFezIoJu1m" target="_blank" rel="noopener" class="social-link"><span>📢 Únete a nuestro canal</span> <span>➔</span></a>
+    <a href="https://www.instagram.com/nocthrax1?xtok=MXIybGJtNXpoN2wxbA%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link"><span>📸 Instagram Oficial</span> <span>➔</span></a>
+    <a href="https://www.tiktok.com/@alvaro.rry?_r=1&_t=ZS-9AuSPmVomRU" target="_blank" rel="noopener" class="social-link"><span>🎵 TikTok Oficial</span> <span>➔</span></a>
+  </div>
+
+  <div class="side-item" onclick="openQueryModal('metodos_menu')">💡 MÉTODOS Y GUÍAS EXCLUSIVAS</div>
+
+  <div>
+    <div class="side-item" onclick="toggleSub('subBots')">🤖 BOTS PARA REDES SOCIALES <span>▼</span></div>
+    <div class="sub-menu" id="subBots">
+      <div class="sub-item" onclick="openModalById('tiktok')">TikTok Bot & Autómatas</div>
+      <div class="sub-item" onclick="openModalById('instagram')">Instagram Bot & Crecimiento</div>
+      <div class="sub-item" onclick="openModalById('facebook')">Facebook Bot Interacciones</div>
+      <div class="sub-item" onclick="openModalById('youtube')">YouTube Bot Vistas & Suscriptores</div>
+      <div class="sub-item" onclick="openModalById('kick')">Kick Bot Espectadores</div>
+      <div class="sub-item" onclick="openModalById('telegram')">Telegram Bot Miembros</div>
+      <div class="sub-item" onclick="openModalById('twitter')">X (Twitter) Bot Alcance</div>
+      <div class="sub-item" onclick="openModalById('spotify')">Spotify Bot Oyentes</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="side-item" onclick="toggleSub('subReniec')">🆔 RENIEC <span>▼</span></div>
+    <div class="sub-menu" id="subReniec">
+      <div class="sub-item" onclick="openQueryModal('reniec_ficha')">Ficha Reniec</div>
+      <div class="sub-item" onclick="openQueryModal('reniec_nombres')">Busca por nombres</div>
+      <div class="sub-item" onclick="openQueryModal('reniec_dni')">DNI Virtual</div>
+      <div class="sub-item" onclick="openQueryModal('reniec_arbol')">Árbol genealógico</div>
+      <div class="sub-item" onclick="openQueryModal('reniec_facial')">Reconocimiento facial</div>
+      <div class="sub-item" onclick="openQueryModal('reniec_extranjeria')">Carné de extranjería</div>
+      <div class="sub-item" onclick="openQueryModal('persona_avanzada')">Persona Avanzada</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="side-item" onclick="toggleSub('subJusticia')">⚖️ JUSTICIA & LEGAL <span>▼</span></div>
+    <div class="sub-menu" id="subJusticia">
+      <div class="sub-item" onclick="openQueryModal('legal_denuncias')">Denuncias Policiales</div>
+      <div class="sub-item" onclick="openQueryModal('legal_fiscal')">Carpeta Fiscal</div>
+      <div class="sub-item" onclick="openQueryModal('legal_antecedentes')">Antecedentes Penales/Judiciales</div>
+      <div class="sub-item" onclick="openQueryModal('legal_requisitorias')">Requisitorias e-SINPOL</div>
+      <div class="sub-item" onclick="openQueryModal('pnp')">Consulta PNP / CIP</div>
+      <div class="sub-item" onclick="openQueryModal('renadespple')">RENADESPPLE</div>
+      <div class="sub-item" onclick="openQueryModal('redam')">Deudores Alimentarios (REDAM)</div>
+      <div class="sub-item" onclick="openQueryModal('redjum')">Deudores Judiciales (REDJUM)</div>
+      <div class="sub-item" onclick="openQueryModal('multas_electorales')">Multas Electorales (JNE)</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="side-item" onclick="toggleSub('subVehiculos')">🚗 VEHÍCULOS <span>▼</span></div>
+    <div class="sub-menu" id="subVehiculos">
+      <div class="sub-item" onclick="openQueryModal('vehicular')">Consulta Vehicular (TIVE)</div>
+      <div class="sub-item" onclick="openQueryModal('vehicular_siguelo')">Síguelo Plus (Avanzado)</div>
+      <div class="sub-item" onclick="openQueryModal('sunarp')">SUNARP - Propiedades</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="side-item" onclick="toggleSub('subFinanzas')">💳 SISTEMA FINANCIERO <span>▼</span></div>
+    <div class="sub-menu" id="subFinanzas">
+      <div class="sub-item" onclick="openQueryModal('finanzas')">Sentinel V2 / V3 / SBS</div>
+      <div class="sub-item" onclick="openQueryModal('infocorp')">Infocorp Reporte</div>
+      <div class="sub-item" onclick="openQueryModal('equifax')">Equifax Reporte</div>
+      <div class="sub-item" onclick="openQueryModal('ruc_sunat')">RUC / SUNAT</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="side-item" onclick="toggleSub('subSalud')">🏥 SALUD & MÉDICO <span>▼</span></div>
+    <div class="sub-menu" id="subSalud">
+      <div class="sub-item" onclick="openQueryModal('receta_medica')">Recetas Médicas</div>
+      <div class="sub-item" onclick="openQueryModal('descanso_medico')">Descansos Médicos</div>
+      <div class="sub-item" onclick="openQueryModal('covid_vacuna')">Covid-19 / Carnet / Seguro</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="side-item" onclick="toggleSub('subEducacion')">🎓 EDUCACIÓN Y DOCUMENTOS <span>▼</span></div>
+    <div class="sub-menu" id="subEducacion">
+      <div class="sub-item" onclick="openQueryModal('actas_certificados')">Actas y Certificados</div>
+      <div class="sub-item" onclick="openQueryModal('grados_sunedu')">Grados Académicos (SUNEDU)</div>
+      <div class="sub-item" onclick="openQueryModal('carnet_universitario')">Carnét Universitario</div>
+      <div class="sub-item" onclick="openQueryModal('certificados_estudios')">Certificados de Estudios (Notas)</div>
+      <div class="sub-item" onclick="openQueryModal('cul_certificado')">Certificado Único Laboral (CUL)</div>
+      <div class="sub-item" onclick="openQueryModal('osiptel')">Osiptel (Líneas a tu nombre)</div>
+      <div class="sub-item" onclick="openQueryModal('intg_hogar')">Intg Hogar</div>
+    </div>
+  </div>
+
+  <div class="side-item" onclick="openQueryModal('general_forms')">📝 GOOGLE FORMS / ENCUESTAS</div>
+  <div class="side-item" onclick="openQueryModal('recibos_luz')">⚡ RECIBOS LUZ, AGUA, GAS</div>
+  <div class="side-item" onclick="openQueryModal('numeros_virtuales')">📱 NÚMEROS VIRTUALES</div>
+  <div class="side-item" onclick="openQueryModal('correo_temporal')">✉️ CORREO TEMPORAL (S/ 10)</div>
+  <div class="side-item" onclick="openQueryModal('aplicaciones_apk')">📲 APLICACIONES APK</div>
+  <div class="side-item" onclick="openQueryModal('busqueda_total')" style="color:var(--accent-glow);border-color:var(--accent-orange);">🕵️‍♂️ Doxeo General/Osint (S/ 35)</div>
+</div>
+
+<main class="main-fullscreen" id="inicio">
+  <div class="hero-tlou">
+    <div class="hero-main-title">
+      <div class="subtitle-part">PERÚ · PART II</div>
+      <h1>NOCTHRAX</h1>
+    </div>
+
+    <div class="hero-description">
+      <p>Servicios digitales avanzados, aceleración de redes sociales e inteligencia de datos. Máxima precisión y confidencialidad en cada proceso.</p>
+      <small style="color:var(--accent-glow); letter-spacing: 2px; text-transform:uppercase; font-weight:700; font-family:var(--font-sub);">“SILENCIO. PRECISIÓN. RESULTADOS.”</small>
+    </div>
+  </div>
+
+  <div class="carousel-container" id="carouselWrapper">
+    <button class="nav-arrow prev" id="prevBtn" aria-label="Anterior">&#8249;</button>
+    <button class="nav-arrow next" id="nextBtn" aria-label="Siguiente">&#8250;</button>
+
+    <div class="stage-3d" id="cardsStage"></div>
+
+    <div class="dots-bar" id="dotsContainer"></div>
+  </div>
+
+  <footer>© 2026 NOCTHRAX | PERÚ · DIGITAL SERVICES</footer>
+</main>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="calcModal">
+  <div class="calc-box" id="calcBox">
+    <div class="calc-content" id="calcContent">
+      <button class="close-modal" id="closeModal">✕</button>
+    </div>
+  </div>
+</div>
+
+<!-- OVERLAY SEGURIDAD BLINDADO -->
+<div class="sec-alert-overlay" id="secAlert">
+  <svg class="sec-demon-icon" viewBox="0 0 100 100">
+    <path fill="#ff5500" d="M50 5 L85 20 L80 55 C78 75 50 95 50 95 C50 95 22 75 20 55 L15 20 Z"/>
+    <path fill="#ff5500" d="M18 25 Q 5 5 25 10 Z"/>
+    <path fill="#ff5500" d="M82 25 Q 95 5 75 10 Z"/>
+    <path fill="#000" d="M30 40 L45 45 L35 55 Z"/>
+    <path fill="#000" d="M70 40 L55 45 L65 55 Z"/>
+    <polygon points="50,55 46,63 54,63" fill="#000"/>
+    <path fill="#000" d="M30 70 L35 80 L40 70 L45 80 L50 70 L55 80 L60 70 L65 80 L70 70 Z"/>
+  </svg>
+  <div class="sec-title">NOCTHRAX</div>
+  <div class="sec-subtitle"> ACCESO NO AUTORIZADO DETECTADO </div>
+  <div class="sec-warning">
+    [SISTEMA DE CONTRAESPIONAJE DE NOCTHRAX]<br><br>
+    Se ha registrado un intento explícito de inspección de código fuente o ingeniería inversa.<br>
+    Su dirección IP, huella digital de hardware y coordenadas de red han sido trianguladas y almacenadas en nuestros registros de auditoría.<br><br>
+    <strong>AVISO DE DOXEO:</strong> Cualquier intento posterior de vulnerar la plataforma dará lugar al bloqueo permanente del dispositivo.
+  </div>
+  <div class="sec-ip" id="secIpDisplay">AUDITANDO DIRECCIÓN IP...</div>
+</div>
+
+<script>
+const CFG = { 
+  whatsapp: "573135022169", 
+  telegram: "abrrlador", 
+  channel: "https://whatsapp.com/channel/0029Vb8U7H18PgsFezIoJu1m" 
+};
+
+const TIKTOK_PRICES = {
+  "Seguidores": [3.00, 5.50, 8.00, 10.50, 12.00, 14.50, 17.00, 19.50, 22.00, 24.00],
+  "Likes / Me Gusta": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 20.00],
+  "Vistas (Views)": [3.00, 4.00, 5.00, 6.00, 7.00, 8.50, 10.00, 11.50, 13.00, 14.00],
+  "Guardados (Saves)": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 18.00],
+  "Comentarios (Custom/Random)": [5.00, 9.00, 13.00, 17.00, 20.00, 24.00, 28.00, 32.00, 36.00, 40.00],
+  "Espectadores en Live": [6.00, 11.00, 16.00, 21.00, 25.00, 30.00, 35.00, 40.00, 45.00, 50.00]
+};
+
+const FACEBOOK_PRICES = {
+  "Seguidores": [3.00, 5.50, 8.00, 10.50, 12.00, 14.50, 17.00, 19.50, 22.00, 24.00],
+  "Me gusta en publicaciones": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 20.00],
+  "Reacciones": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 20.00],
+  "Compartidos": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 18.00],
+  "Espectadores en vivo": [6.00, 11.00, 16.00, 21.00, 25.00, 30.00, 35.00, 40.00, 45.00, 50.00],
+  "Historias": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 20.00],
+  "Vistas": [3.00, 4.00, 5.00, 6.00, 7.00, 8.50, 10.00, 11.50, 13.00, 14.00],
+};
+
+const YOUTUBE_PRICES = {
+  "Suscriptores": [3.00, 6.00, 9.00, 12.00, 14.00, 17.00, 20.00, 23.00, 26.00, 28.00],
+  "Me gusta en comentarios": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 20.00],
+  "Me gusta en publicaciones": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 20.00],
+  "Comentarios": [5.00, 9.00, 13.00, 17.00, 20.00, 24.00, 28.00, 32.00, 36.00, 40.00],
+  "Tiempo de reproducción": [6.00, 11.00, 16.00, 21.00, 25.00, 30.00, 35.00, 40.00, 45.00, 50.00],
+  "Espectadores en vivo": [6.00, 11.00, 16.00, 21.00, 25.00, 30.00, 35.00, 40.00, 45.00, 50.00],
+  "Vistas": [3.00, 4.00, 5.00, 6.00, 7.00, 8.50, 10.00, 11.50, 13.00, 14.00]
+};
+
+const KICK_PRICES = {
+  "Seguidores": [3.00, 5.50, 8.00, 10.50, 12.00, 14.50, 17.00, 19.50, 22.00, 24.00],
+  "Espectadores en vivo": [6.00, 11.00, 16.00, 21.00, 25.00, 30.00, 35.00, 40.00, 45.00, 50.00]
+};
+
+const INSTAGRAM_PRICES = {
+  "Seguidores": [3.00, 5.50, 8.00, 10.50, 12.00, 14.50, 17.00, 19.50, 22.00, 24.00],
+  "Me gusta en publicaciones": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 20.00],
+  "Comentarios": [5.00, 9.00, 13.00, 17.00, 20.00, 24.00, 28.00, 32.00, 36.00, 40.00],
+  "Compromiso": [3.00, 5.00, 7.00, 9.00, 11.00, 13.00, 15.00, 18.00, 20.00, 22.00],
+};
+
+const GENERAL_DEFAULT_PRICES = {
+  "Seguidores": [3.00, 5.50, 8.00, 10.50, 12.00, 14.50, 17.00, 19.50, 22.00, 24.00],
+  "Likes": [3.00, 5.00, 7.00, 9.00, 10.00, 12.00, 14.00, 16.00, 18.00, 20.00],
+  "Vistas / Reproducciones": [3.00, 4.00, 5.00, 6.00, 7.00, 8.50, 10.00, 11.50, 13.00, 14.00]
+};
+
+const METODOS_TIERS = [
+  ["Método Básico Guías", "Acceso a manuales y métodos informativos esenciales.", "S/ 15.00", "1.jpg"],
+  ["Método Pro Verificación", "Guías avanzadas de procesos y flujos digitales.", "S/ 30.00", "2.jpg"],
+  ["Método Élite Full Access", "Acceso completo a todos los métodos y actualizaciones directas.", "S/ 50.00", "3.jpg"],
+  ["Método Masterclass Colaborador", "Plantilla editable para nuevos colaboradores (Ingresa tu nombre y método).", "S/ 70.00", "4.jpg"]
+];
+
+const FORMS_TIERS = [
+  { n: "50 Respuestas", p: "S/ 5.00", d: "Respuestas reales progresivas y confiables para tu formulario.", img: "1.jpg", badge: "Básico" },
+  { n: "70 Respuestas", p: "S/ 8.00", d: "Llenado continuo adaptado a tus opciones y preguntas.", img: "2.jpg", badge: "Popular" },
+  { n: "80 Respuestas", p: "S/ 12.00", d: "Ideal para proyectos medianos o encuestas de estudio.", img: "3.jpg", badge: "Estándar" },
+  { n: "100 Respuestas", p: "S/ 16.00", d: "Paquete óptimo para investigación académica inicial.", img: "4.jpg", badge: "Recomendado" },
+  { n: "150 Respuestas", p: "S/ 20.00", d: "Alto volumen con distribución uniforme garantizada.", img: "5.jpg", badge: "Pro" },
+  { n: "200 Respuestas", p: "S/ 26.00", d: "Ideal para tesis y trabajos universitarios completos.", img: "7.jpg", badge: "Élite" },
+  { n: "250 Respuestas", p: "S/ 30.00", d: "Cobertura masiva para proyectos y análisis estadísticos.", img: "1.jpg", badge: "Master" },
+  { n: "300 Respuestas", p: "S/ 65.00", d: "Gran flujo de respuestas reales segmentadas.", img: "2.jpg", badge: "Business" },
+  { n: "500 Respuestas", p: "S/ 100.00", d: "Soporte corporativo y masivo para investigaciones extensas.", img: "3.jpg", badge: "Full Access" }
+];
+
+const WEB_TIERS = [
+  ["Landing Page Básica", "1 Sección optimizada, diseño adaptable móvil, enlace directo a WhatsApp.", "S/ 20.00", "1.jpg"],
+  ["Landing Page Pro", "Hasta 2 Secciones con animaciones fluidas, formulario y dominio temporal.", "S/ 45.00", "2.jpg"],
+  ["Web Profesional", "Hasta 3 Secciones, formulario de contacto interactivo, velocidad optimizada.", "S/ 60.00", "3.jpg"],
+  ["Web Avanzada Plus", "Hasta 4 Secciones interactivas, integración con redes sociales y SEO inicial.", "S/ 85.00", "4.jpg"],
+  ["Web Corporativa", "Hasta 5 Secciones, diseño exclusivo, panel autoadministrable, SEO avanzado.", "S/ 100.00", "5.jpg"],
+  ["E-commerce / Full System", "Catálogo completo de productos, pasarela de pagos integrada, asesoría y dominio.", "S/ 150.00", "7.jpg"]
+];
+
+const BOT_TIERS = [
+  ["Bot Informativo Básico", "Respuestas automáticas simples 24/7 con menú principal.", "S/ 25.00", "3.jpg"],
+  ["Bot Automatizado Estándar", "Menú interactivo de opciones avanzadas para Telegram o WhatsApp.", "S/ 35.00", "4.jpg"],
+  ["Bot Avanzado con APIs", "Conexión con APIs, respuestas inteligentes y base de datos.", "S/ 45.00", "5.jpg"],
+  ["Bot Full Business con Pagos", "Integración completa de pagos, catálogo y soporte multiusuario.", "S/ 65.00", "7.jpg"]
+];
+
+const APK_ITEMS = [
+  { n: "YAPE FAKE-PLIN FAKE-LEMON CARD FAKE-Y MAS BILLETERAS DIGITALES", p: "S/ 25.00", d: "Algunos estan en desarrollo, son los mas identicos y avanzados del mercado.", img: "1.jpg", badge: "Más Vendido" },
+  { n: "Streming APK", p: "S/ 15.00", d: "En desarrollo.", img: "2.jpg", badge: "Popular" },
+  { n: "tv APK", p: "S/ 15.00", d: "Apps de con todos los canales del mundo.", img: "3.jpg", badge: "Nuevo" },
+  { n: "Añade tu APK y genera tus ganancias", p: "S/ 10.00", d: "Plantilla para ingresar tu nombre y añadir tu propia APK a la red.", img: "4.jpg", badge: "Colabora" }
+];
+
+const NUMEROS_VIRTUALES_ITEMS = [
+  { n: "🇵🇪 Perú/ Europa/ Asia (WhatsApp / Telegram)", p: "S/ 10.00", d: "Número verificado al instante con código operativo.", badge: "Destacado", img: "5.jpg" },
+  { n: "🇺🇸 Estados Unidos (+1)", p: "S/ 10.00", d: "Línea virtual estadounidense de alta estabilidad para validaciones globales.", badge: "Estándar", img: "7.jpg" },
+  { n: "🇨🇴 Colombia (+57)", p: "S/ 10.00", d: "Número activo de Colombia para registros en redes sociales y apps de mensajería.", badge: "Estándar", img: "1.jpg" },
+  { n: "🌐 Panel de Números (Acceso Total)", p: "S/ 17.00", d: "Acceso multi-país ilimitado con plantilla para colaboradores y revendedores.", badge: "Élite", img: "2.jpg" }
+];
+
+/* CARRUSEL 3D CON FONDOS COMBINADOS DE 1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg, 7.jpg */
+const BOTS = [
+  { k:"metodos", n:"Métodos Nocthrax", img:"1.jpg", rating:"9.9 ★", hasCalc:false, d:"Guías y métodos exclusivos paso a paso.", s:METODOS_TIERS },
+  { k:"web", n:"Creación de tu Página Web", img:"2.jpg", rating:"9.9 ★", hasCalc:false, d:"Construcción y diseño profesional de páginas web a tu medida.", s:WEB_TIERS },
+  { k:"bot", n:"¡Creamos tu Bot de Telegram & WhatsApp!", img:"3.jpg", rating:"9.8 ★", hasCalc:false, d:"Automatización inteligente 24/7 para escalar tus ventas al instante.", s:BOT_TIERS },
+  { k:"forms", n:"Google Forms & Encuestas", img:"4.jpg", rating:"9.9 ★", hasCalc:false, d:"Llenado masivo de respuestas reales para Google Forms.", isFormsCustom:true },
+  { k:"tiktok", n:"TikTok", img:"5.jpg", rating:"9.8 ★", hasCalc:true, priceTable: TIKTOK_PRICES, d:"Impulso algorítmico inmediato para tus videos.", s: Object.keys(TIKTOK_PRICES).map(k=>[k]) },
+  { k:"instagram", n:"Instagram", img:"7.jpg", rating:"9.9 ★", hasCalc:true, priceTable: INSTAGRAM_PRICES, d:"Posicionamiento orgánico y aceleración de perfil.", s: Object.keys(INSTAGRAM_PRICES).map(k=>[k]) },
+  { k:"facebook", n:"Facebook", img:"1.jpg", rating:"9.7 ★", hasCalc:true, priceTable: FACEBOOK_PRICES, d:"Aumento de seguidores, reacciones y reproducciones.", s: Object.keys(FACEBOOK_PRICES).map(k=>[k]) },
+  { k:"youtube", n:"YouTube", img:"2.jpg", rating:"9.8 ★", hasCalc:true, priceTable: YOUTUBE_PRICES, d:"Visibilidad, suscriptores y visualizaciones.", s: Object.keys(YOUTUBE_PRICES).map(k=>[k]) },
+  { k:"kick", n:"Kick", img:"3.jpg", rating:"9.6 ★", hasCalc:true, priceTable: KICK_PRICES, d:"Impulsa tus directos y seguidores en Kick.", s: Object.keys(KICK_PRICES).map(k=>[k]) },
+  { k:"telegram", n:"Telegram", img:"4.jpg", rating:"9.7 ★", hasCalc:true, priceTable: GENERAL_DEFAULT_PRICES, d:"Miembros e interacciones para canales y grupos.", s: Object.keys(GENERAL_DEFAULT_PRICES).map(k=>[k]) },
+  { k:"twitter", n:"X (Twitter)", img:"5.jpg", rating:"9.6 ★", hasCalc:true, priceTable: GENERAL_DEFAULT_PRICES, d:"Aumento de seguidores y alcance en publicaciones.", s: Object.keys(GENERAL_DEFAULT_PRICES).map(k=>[k]) },
+  { k:"spotify", n:"Spotify", img:"7.jpg", rating:"9.7 ★", hasCalc:true, priceTable: GENERAL_DEFAULT_PRICES, d:"Reproducciones y oyentes mensuales para música.", s: Object.keys(GENERAL_DEFAULT_PRICES).map(k=>[k]) }
+];
+
+const ALL_SERVICES_MAP = [
+  { text: "Métodos Nocthrax", action: () => openQueryModal('metodos_menu') },
+  { text: "Creación de tu Página Web", action: () => openModal(1) },
+  { text: "¡Creamos tu Bot de Telegram & WhatsApp!", action: () => openModal(2) },
+  { text: "Google Forms - Respuestas Masivas", action: () => openModal(3) },
+  { text: "TikTok (Seguidores, Me Gusta, Live, Vistas)", action: () => openModal(4) },
+  { text: "Instagram (Followers, Me gusta, Comentarios)", action: () => openModal(5) },
+  { text: "Facebook (Reacciones, Historias, Vistas)", action: () => openModal(6) },
+  { text: "YouTube (Suscriptores, WatchTime, Vistas)", action: () => openModal(7) },
+  { text: "Kick (Seguidores, Live)", action: () => openModal(8) },
+  { text: "Reniec - Ficha / Nombres / DNI / Facial", action: () => openQueryModal('reniec_ficha') },
+  { text: "Reconocimiento Facial (Foto / Imagen)", action: () => openQueryModal('reniec_facial') },
+  { text: "Persona Avanzada (Consulta Integral)", action: () => openQueryModal('persona_avanzada') },
+  { text: "Denuncias Policiales (SIDPOL)", action: () => openQueryModal('legal_denuncias') },
+  { text: "Carpeta Fiscal (Ministerio Público)", action: () => openQueryModal('legal_fiscal') },
+  { text: "Antecedentes Penales/Judiciales/Policiales", action: () => openQueryModal('legal_antecedentes') },
+  { text: "Requisitorias e-SINPOL (Persona/Vehículos)", action: () => openQueryModal('legal_requisitorias') },
+  { text: "Consulta PNP / CIP (Policía Nacional)", action: () => openQueryModal('pnp') },
+  { text: "RENADESPPLE", action: () => openQueryModal('renadespple') },
+  { text: "Deudores Alimentarios (REDAM)", action: () => openQueryModal('redam') },
+  { text: "Deudores Judiciales Morosos (REDJUM)", action: () => openQueryModal('redjum') },
+  { text: "Multas Electorales (JNE)", action: () => openQueryModal('multas_electorales') },
+  { text: "Consulta Vehicular (TIVE / SUNARP)", action: () => openQueryModal('vehicular') },
+  { text: "Síguelo Plus (Vehicular Avanzado)", action: () => openQueryModal('vehicular_siguelo') },
+  { text: "SUNARP - Propiedades / Asientos", action: () => openQueryModal('sunarp') },
+  { text: "Sentinel V2 / V3 / SBS", action: () => openQueryModal('finanzas') },
+  { text: "Infocorp Reporte", action: () => openQueryModal('infocorp') },
+  { text: "Equifax Reporte", action: () => openQueryModal('equifax') },
+  { text: "RUC / SUNAT", action: () => openQueryModal('ruc_sunat') },
+  { text: "Recetas Médicas Especializadas", action: () => openQueryModal('receta_medica') },
+  { text: "Descansos Médicos Justificados", action: () => openQueryModal('descanso_medico') },
+  { text: "Covid-19 / Carnet de Vacunación / Seguro", action: () => openQueryModal('covid_vacuna') },
+  { text: "Actas y Certificados (Brevete/Nacimiento/Defunción)", action: () => openQueryModal('actas_certificados') },
+  { text: "Grados Académicos (SUNEDU)", action: () => openQueryModal('grados_sunedu') },
+  { text: "Carnet Universitario", action: () => openQueryModal('carnet_universitario') },
+  { text: "Certificados de Estudios (Notas)", action: () => openQueryModal('certificados_estudios') },
+  { text: "Certificado Único Laboral (CUL)", action: () => openQueryModal('cul_certificado') },
+  { text: "Osiptel (Líneas a tu nombre)", action: () => openQueryModal('osiptel') },
+  { text: "Intg Hogar (Líneas / Servicios Fijos)", action: () => openQueryModal('intg_hogar') },
+  { text: "Correo Temporal", action: () => openQueryModal('correo_temporal') },
+  { text: "Números Virtuales (WhatsApp / Telegram)", action: () => openQueryModal('numeros_virtuales') },
+  { text: "Recibos Luz, Agua, Gas", action: () => openQueryModal('recibos_luz') },
+  { text: "Aplicaciones APK - Mercado VIP", action: () => openQueryModal('aplicaciones_apk') },
+  { text: "Búsqueda Total Avanzada", action: () => openQueryModal('busqueda_total') }
+];
+
+const $ = id => document.getElementById(id);
+const formatMsg = (lines) => lines.filter(Boolean).join("\n");
+const wa = t => `https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent(t)}`;
+const tg = t => `https://t.me/${CFG.telegram}?text=${encodeURIComponent(t)}`;
+const money = n => "S/ " + n.toFixed(2);
+
+let securityTriggered = false;
+
+function triggerSecurity() {
+  if (securityTriggered) return;
+  securityTriggered = true;
+  const alertOverlay = $("secAlert");
+  if(alertOverlay) alertOverlay.classList.add("active");
+  fetch("https://ipapi.co/json/")
+    .then(r => r.json())
+    .then(data => {
+      $("secIpDisplay").innerHTML = `DIRECCIÓN IP CAPTURADA: <strong style="color:#ff5500;">${data.ip || "DESCONOCIDA"}</strong> | UBICACIÓN: <strong style="color:#fff;">${data.city || ""}, ${data.region || ""}, ${data.country_name || ""}</strong>`;
+    })
+    .catch(() => {
+      $("secIpDisplay").innerHTML = "SISTEMA REGISTRADO: " + navigator.userAgent;
+    });
+}
+
+window.addEventListener("keydown", function(e) {
+  if (
+    e.keyCode === 123 || 
+    (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) ||
+    (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83))
+  ) {
+    e.preventDefault();
+    triggerSecurity();
+    return false;
+  }
+});
+
+function calcPriceFromTable(arr, qty){
+  if(!qty || qty < 100) return Math.max(3.00, arr[0]);
+  if(!Array.isArray(arr)) return 3.00;
+  
+  const indexTier = Math.floor(qty / 100) - 1;
+  if(indexTier < 0) return Math.max(3.00, arr[0]);
+  if(indexTier >= arr.length - 1) {
+    const lastPrice = arr[arr.length - 1];
+    const unitExtra = lastPrice / 1000;
+    return Math.max(3.00, +(qty * unitExtra).toFixed(2));
+  }
+  
+  const p1 = arr[indexTier];
+  const p2 = arr[indexTier + 1];
+  const rem = qty % 100;
+  const interpolated = p1 + (p2 - p1) * (rem / 100);
+  return Math.max(3.00, +interpolated.toFixed(2));
+}
+
+let pi=0, si=0, q=500;
+let autoRotateTimer = null;
+
+function renderCarousel(){
+  const stage = $("cardsStage");
+  const total = BOTS.length;
+
+  stage.innerHTML = BOTS.map((p, i)=>{
+    let posClass = "hidden";
+    const diff = (i - pi + total) % total;
+    
+    if(diff === 0) posClass = "center";
+    else if(diff === 1) posClass = "right-1";
+    else if(diff === total - 1) posClass = "left-1";
+    else if(diff === 2) posClass = "right-2";
+    else if(diff === total - 2) posClass = "left-2";
+
+    return `
+      <div class="card-3d ${posClass}" data-index="${i}" style="background-image: url('${p.img}');">
+        <span class="c-badge">${p.rating}</span>
+        <div class="c-body">
+          <div>
+            <h3>${p.n}</h3>
+            <p>${p.d}</p>
+          </div>
+        </div>
+        <button class="c-btn-solicitar" onclick="openModal(${i})">SOLICITAR</button>
+      </div>
+    `;
+  }).join("");
+
+  $("dotsContainer").innerHTML = BOTS.map((_, i)=>`
+    <div class="dot ${i === pi ? 'active' : ''}" data-index="${i}"></div>
+  `).join("");
+}
+
+function openModal(index){
+  stopAutoRotate();
+  pi = index; si = 0; q = 500;
+  renderCarousel();
+  buildCalc();
+  $("calcModal").classList.add("active");
+}
+
+function openModalById(key){
+  const foundIdx = BOTS.findIndex(b => b.k === key);
+  if(foundIdx !== -1) openModal(foundIdx);
+}
+
+function closeModalFn(){
+  $("calcModal").classList.remove("active");
+}
+
+function updatePriceDisplay() {
+  const p = BOTS[pi], s = p.s[si];
+  if(p.hasCalc) {
+    const qInput = $("qInput");
+    if(qInput) q = parseInt(qInput.value) || 500;
+    const arrayPrices = p.priceTable[s[0]];
+    const calculated = calcPriceFromTable(arrayPrices, q);
+    if($("tpSpan")) $("tpSpan").textContent = money(calculated);
+  }
+}
+
+function buildCalc(){
+  const p = BOTS[pi];
+  const calcContent = $("calcContent");
+
+  if(p.isFormsCustom) {
+    renderStoreModal("GOOGLE FORMS / ENCUESTAS", "Selecciona tu paquete de respuestas masivas", FORMS_TIERS, false);
+    return;
+  }
+
+  if(p.hasCalc){
+    const s = p.s[si];
+    const arrayPrices = p.priceTable[s[0]];
+    const calculated = calcPriceFromTable(arrayPrices, q);
+    calcContent.innerHTML = `
+      <button class="close-modal" id="closeModal">✕</button>
+      <div style="margin-bottom:14px; padding-right:35px;">
+        <h3 style="font-size:clamp(22px, 5vw, 32px);margin:0 0 4px;font-family:var(--font-h);color:#fff;text-shadow: 0 0 15px var(--accent-orange);">${p.n}</h3>
+        <p style="color:var(--text-muted);font-size:12px;margin:0;">${p.d}</p>
+      </div>
+      <div>
+        <label>TIPO DE SERVICIO</label>
+        <div class="chips" style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;">${p.s.map((x,j)=>`<button data-j="${j}" class="${j==si?"on":""}" style="padding:10px 16px; background:${j==si?'var(--accent-orange)':'rgba(255,255,255,0.05)'}; border:1px solid var(--line-border); color:#fff; border-radius:20px; cursor:pointer; font-weight:700; font-size:11px; box-shadow:${j==si?'0 0 12px var(--accent-orange)':'none'}">${x[0]}</button>`).join("")}</div>
+        
+        <label>CANTIDAD</label>
+        <div class="qty-wrap" style="display:flex; gap:8px; flex-wrap:wrap;">
+          <input id="qInput" type="number" min="100" step="100" value="${q}" inputmode="numeric" placeholder="Ej: 500" oninput="updatePriceDisplay()">
+          <button data-q="100" style="padding:0 16px; background:transparent; border:1px solid var(--line-border); color:#fff; border-radius:20px; cursor:pointer;">100</button>
+          <button data-q="500" style="padding:0 16px; background:transparent; border:1px solid var(--line-border); color:#fff; border-radius:20px; cursor:pointer;">500</button>
+          <button data-q="1000" style="padding:0 16px; background:transparent; border:1px solid var(--line-border); color:#fff; border-radius:20px; cursor:pointer;">1K</button>
+        </div>
+
+        <label>ENLACE / DETALLES DEL PEDIDO</label>
+        <input id="uInput" type="text" placeholder="https://… o @usuario">
+
+        <div class="price-display" style="display:flex; align-items:baseline; gap:12px; margin:18px 0 10px;"><span id="tpSpan" style="font:800 34px var(--font-sub); color:#fff; text-shadow:0 0 12px var(--accent-orange);">${money(calculated)}</span></div>
+
+        <div class="btn-group">
+          <button class="btn-wa" data-act="wa">Pedir por WhatsApp</button>
+          <button class="btn-tg" data-act="tg">Pedir por Telegram</button>
+        </div>
+      </div>
+    `;
+  } else {
+    const formattedTiers = p.s.map(x => ({ n: x[0], p: x[2], d: x[1], img: x[3] || '2.jpg', badge: 'Plan' }));
+    renderStoreModal(p.n, "Selecciona tu nivel o plan preferido", formattedTiers, false);
+    return;
+  }
+  $("closeModal").onclick = closeModalFn;
+}
+
+function renderStoreModal(title, subtitle, itemsList, isCollaborative = false) {
+  $("sidebar").classList.remove("open");
+  stopAutoRotate();
+
+  const calcContent = $("calcContent");
+  let activeIndex = 0;
+
+  function updateStoreView(idx) {
+    activeIndex = idx;
+    const item = itemsList[idx];
+    calcContent.innerHTML = `
+      <button class="close-modal" id="closeModal">✕</button>
+      <div class="store-layout">
+        <div class="store-hero" style="background-image: url('${item.img || '1.jpg'}');">
+          <div class="store-hero-content">
+            <span class="store-hero-badge">${item.badge || 'Destacado'}</span>
+            <h2 class="store-hero-title">${item.n}</h2>
+            <p class="store-hero-desc">${item.d}</p>
+            <div class="store-hero-footer">
+              <span class="store-hero-price">${item.p}</span>
+              <button class="btn-hero-action" onclick="sendStoreOrder('${title}', '${item.n}', '${item.p}')">Adquirir Ahora</button>
+            </div>
+          </div>
+        </div>
+
+        ${isCollaborative ? `
+        <div style="background:rgba(255,85,0,0.12); border:1px solid var(--accent-orange); padding:16px; border-radius:16px; background-image:url('3.jpg'); background-size:cover; background-position:center top; position:relative; overflow:hidden;">
+          <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(10,4,2,0.85);z-index:1;"></div>
+          <div style="position:relative;z-index:2;">
+            <label style="margin-top:0;">📝 ¿QUIERES UNIRTE COMO COLABORADOR?</label>
+            <p style="font-size:11px; color:var(--text-muted); margin:4px 0 10px;">Ingresa tu nombre y tu propio producto/método para publicarlo en la red:</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <input type="text" id="collabName" placeholder="Tu Nombre / Alias" style="flex:1 1 160px;">
+              <input type="text" id="collabProd" placeholder="Nombre de tu Producto o Método" style="flex:1 1 200px;">
+              <button class="btn-search-action" onclick="sendCollabRequest('${title}')" style="height:auto; padding:12px 20px;">Unirme</button>
+            </div>
+          </div>
+        </div>
+        ` : ''}
+
+        <div class="store-section-title">${subtitle}</div>
+        <div class="store-grid">
+          ${itemsList.map((it, i) => `
+            <div class="store-card ${i===activeIndex?'active-card':''}" onclick="updateStoreActive(${i})" style="background-image: url('${it.img || '5.jpg'}');">
+              <div class="store-card-content">
+                <span class="store-card-badge">${it.badge || 'Item'}</span>
+                <h4 class="store-card-title">${it.n}</h4>
+                <div class="store-card-footer">
+                  <span class="store-card-price">${it.p}</span>
+                  <span style="font-size:11px; color:var(--text-muted);">Ver ➔</span>
+                </div>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `;
+    $("closeModal").onclick = closeModalFn;
+  }
+
+  window.updateStoreActive = updateStoreView;
+  updateStoreView(0);
+  $("calcModal").classList.add("active");
+}
+
+function sendStoreOrder(title, option, price) {
+  const msg = formatMsg([
+    "🔴 *NOCTHRAX | PERÚ*",
+    "────────────────────",
+    `📌 *Categoría:* ${title}`,
+    `💎 *Opción / Plan:* ${option}`,
+    `💰 *Precio Oficial:* ${price}`,
+    "────────────────────",
+    `📢 *Canal Oficial:* ${CFG.channel}`
+  ]);
+  window.open(wa(msg), "_blank");
+}
+
+function sendCollabRequest(category) {
+  const name = $("collabName") ? $("collabName").value : "";
+  const prod = $("collabProd") ? $("collabProd").value : "";
+  if(!name || !prod) {
+    alert("Por favor ingresa tu nombre y el producto/método.");
+    return;
+  }
+  const msg = formatMsg([
+    "🚀 *NOCTHRAX | NUEVA SOLICITUD DE COLABORADOR*",
+    "────────────────────",
+    `📌 *Categoría:* ${category}`,
+    `👤 *Colaborador:* ${name}`,
+    `💡 *Producto / Método:* ${prod}`,
+    "────────────────────",
+    `📢 *Canal Oficial:* ${CFG.channel}`
+  ]);
+  window.open(wa(msg), "_blank");
+}
+
+function openQueryModal(type) {
+  $("sidebar").classList.remove("open");
+  stopAutoRotate();
+
+  if(type === 'aplicaciones_apk') {
+    renderStoreModal("APLICACIONES APK", "Otras Aplicaciones y Mods Disponibles", APK_ITEMS, true);
+    return;
+  }
+  if(type === 'numeros_virtuales') {
+    renderStoreModal("NÚMEROS VIRTUALES", "Selecciona País o Panel Completo", NUMEROS_VIRTUALES_ITEMS, true);
+    return;
+  }
+  if(type === 'metodos_menu') {
+    const formattedMethods = METODOS_TIERS.map(t=>({n: t[0], p: t[2], d: t[1], img: t[3], badge: "Guía Pro"}));
+    renderStoreModal("MÉTODOS Y GUÍAS EXCLUSIVAS", "Niveles y Plantillas de Acceso", formattedMethods, true);
+    return;
+  }
+  if(type === 'general_forms') {
+    renderStoreModal("GOOGLE FORMS / ENCUESTAS", "Selecciona tu paquete de respuestas masivas", FORMS_TIERS, false);
+    return;
+  }
+
+  const calcContent = $("calcContent");
+  let html = `<button class="close-modal" id="closeModal">✕</button><div class="query-card">`;
+
+  if(type === 'busqueda_total') {
+    html += `
+      <div style="margin-bottom:8px;"><span style="font-size:28px;">🕵️‍♂️</span></div>
+      <div class="header-title">BÚSQUEDA TOTAL</div>
+      <div class="header-sub">Incluye todos los servicios oficiales a un precio único de <strong style="color:var(--accent-glow);">S/ 35.00</strong></div>
+      
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:10px; margin:15px 0;">
+        <div style="background:rgba(255,85,0,0.08); border:1px solid var(--line-border); padding:12px; border-radius:12px; background-image:url('1.jpg'); background-size:cover; background-position:center top; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(10,4,2,0.78);z-index:1;"></div><div style="position:relative;z-index:2;"><div style="font-size:12px; font-weight:800; color:#fff;">🆔 RENIEC</div><div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Fichas y datos completos</div></div></div>
+        <div style="background:rgba(255,85,0,0.08); border:1px solid var(--line-border); padding:12px; border-radius:12px; background-image:url('2.jpg'); background-size:cover; background-position:center top; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(10,4,2,0.78);z-index:1;"></div><div style="position:relative;z-index:2;"><div style="font-size:12px; font-weight:800; color:#fff;">🚗 MTC</div><div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Licencias y papeletas</div></div></div>
+        <div style="background:rgba(255,85,0,0.08); border:1px solid var(--line-border); padding:12px; border-radius:12px; background-image:url('3.jpg'); background-size:cover; background-position:center top; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(10,4,2,0.78);z-index:1;"></div><div style="position:relative;z-index:2;"><div style="font-size:12px; font-weight:800; color:#fff;">🌳 ÁRBOL</div><div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Vínculos familiares</div></div></div>
+        <div style="background:rgba(255,85,0,0.08); border:1px solid var(--line-border); padding:12px; border-radius:12px; background-image:url('4.jpg'); background-size:cover; background-position:center top; position:relative; overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(10,4,2,0.78);z-index:1;"></div><div style="position:relative;z-index:2;"><div style="font-size:12px; font-weight:800; color:#fff;">🛡️ PNP</div><div style="font-size:10px; color:var(--text-muted); margin-top:2px;">Requisitorias e historial</div></div></div>
+      </div>
+
+      <div class="query-grid" style="margin-top:12px;">
+        <div class="query-field">
+          <label>DNI A CONSULTAR</label>
+          <input type="text" id="qDni" placeholder="Ej: 12345678" maxlength="8" oninput="validateDniInput(this)">
+          <small id="dniError" style="display:none; color:var(--accent-red);" class="error-msg">Solo números, 8 dígitos.</small>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Búsqueda Total - S/ 35')">⌕ Consultar Todo (S/ 35.00)</button>
+      </div>
+    `;
+  } else if(type === 'reniec_ficha') {
+    html += `
+      <div class="header-title">🆔 CONSULTA RENIEC (TXT / PDF / C4 / FICHA)</div>
+      <div class="header-sub">Selecciona el tipo de documento o formato oficial requerido</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI</label>
+          <input type="text" id="qDni" placeholder="Ej: 75178640" maxlength="8" oninput="validateDniInput(this)">
+          <small id="dniError" style="display:none; color:var(--accent-red);" class="error-msg">Solo números, 8 dígitos.</small>
+        </div>
+        <div class="query-field">
+          <label>Tipo de Formato</label>
+          <select id="qType">
+            <option value="RENIEC TXT (JSON)">RENIEC TXT (JSON)</option>
+            <option value="RENIEC BLANCO (PDF)">RENIEC BLANCO (PDF)</option>
+            <option value="C4 CERTIFICADO (PDF)">C4 CERTIFICADO (PDF)</option>
+            <option value="FICHA RENIEC (PNG)">FICHA RENIEC (PNG)</option>
+            <option value="FICHA RENIEC AZUL (PDF)">FICHA RENIEC AZUL (PDF)</option>
+          </select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Ficha / Consulta RENIEC')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'reniec_facial') {
+    html += `
+      <div class="header-title">📸 RECONOCIMIENTO FACIAL BIOMÉTRICO</div>
+      <div class="header-sub">Sube una fotografía, imagen o toma captura para realizar la coincidencia biométrica oficial</div>
+      <div class="query-grid" style="flex-direction:column;align-items:stretch;">
+        <div class="query-field">
+          <label>Adjuntar Foto / Imagen de Rostro</label>
+          <input type="file" id="qFile" accept="image/*" style="padding:10px;">
+        </div>
+        <div class="query-field">
+          <label>Notas o Referencia (Opcional)</label>
+          <input type="text" id="qGeneral" placeholder="Ej: Nombre o DNI referencial si lo tienes...">
+        </div>
+        <div class="btn-group" style="margin-top:12px;">
+          <button class="btn-wa" onclick="sendQueryRequest('Reconocimiento Facial (Con Foto/Imagen)')">Enviar Imagen por WhatsApp</button>
+          <button class="btn-tg" onclick="sendQueryRequest('Reconocimiento Facial (Con Foto/Imagen)')">Enviar Imagen por Telegram</button>
+        </div>
+      </div>
+    `;
+  } else if(type === 'recibos_luz') {
+    html += `
+      <div class="header-title">⚡ CONSULTA DE RECIBOS (LUZ, AGUA, GAS)</div>
+      <div class="header-sub">Selecciona la empresa de servicio y proporciona el número de suministro o DNI</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>Empresa de Servicio</label>
+          <select id="qType">
+            <option value="Luz del Sur">Luz del Sur (Electricidad)</option>
+            <option value="Enel Distribución">Enel Distribución (Electricidad)</option>
+            <option value="Sedapal">Sedapal (Agua Potable)</option>
+            <option value="Calidda">Calidda (Gas Natural)</option>
+            <option value="Electro Sur Este / Norte">Electro Regional (Provincias)</option>
+          </select>
+        </div>
+        <div class="query-field">
+          <label>Número de Suministro / Nro. Cliente / DNI</label>
+          <input type="text" id="qDni" placeholder="Ej: 10492830 o DNI del titular">
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Consulta de Recibos (Luz/Agua/Gas)')">⌕ Consultar Recibo</button>
+      </div>
+    `;
+  } else if(type === 'persona_avanzada') {
+    html += `
+      <div class="header-title">👤 PERSONA AVANZADA</div>
+      <div class="header-sub">RENIEC · MTC · ARBOL · PNP · SUNEDU · DENUNCIAS · FISCALIA · REQUISITORIAS · SUNAT · SUNARP · OSIPTEL</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>Valor a consultar (DNI)</label>
+          <input type="text" id="qDni" placeholder="Ej: 12345678" maxlength="8" oninput="validateDniInput(this)">
+        </div>
+        <div class="query-field">
+          <label>Tipo de consulta</label>
+          <select id="qType" disabled><option value="Persona Avanzada">Persona Avanzada 🔍</option></select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Persona Avanzada Integral')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'legal_denuncias') {
+    html += `
+      <div class="header-title">⚖️ DENUNCIAS POLICIALES (SIDPOL)</div>
+      <div class="header-sub">Búsqueda de denuncias registradas por número de DNI</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI del consultado</label>
+          <input type="text" id="qDni" placeholder="Ej: 78657674" maxlength="8" oninput="validateDniInput(this)">
+        </div>
+        <div class="query-field">
+          <label>Tipo</label>
+          <select id="qType"><option value="Denuncias policiales">Denuncias policiales</option></select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Denuncias Policiales SIDPOL')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'legal_fiscal') {
+    html += `
+      <div class="header-title">⚖️ CARPETA FISCAL — MINISTERIO PÚBLICO</div>
+      <div class="header-sub">Registros e investigación en el Ministerio Público por DNI</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI</label>
+          <input type="text" id="qDni" placeholder="Ej: 78657674" maxlength="8" oninput="validateDniInput(this)">
+        </div>
+        <div class="query-field">
+          <label>Tipo</label>
+          <select id="qType"><option value="Carpetas fiscales">Carpetas fiscales</option></select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Carpeta Fiscal MP')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'legal_antecedentes') {
+    html += `
+      <div class="header-title">⚖️ CONSULTA ANTECEDENTES (INPE / PODER JUDICIAL)</div>
+      <div class="header-sub">Verificación de registros judiciales, penales y policiales</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI</label>
+          <input type="text" id="qDni" placeholder="Ej: 70364031" maxlength="8" oninput="validateDniInput(this)">
+        </div>
+        <div class="query-field">
+          <label>Tipo</label>
+          <select id="qType">
+            <option value="Antecedentes penales">Antecedentes penales</option>
+            <option value="Antecedentes judiciales">Antecedentes judiciales</option>
+            <option value="Antecedentes policiales">Antecedentes policiales</option>
+          </select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Consulta Antecedentes')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'legal_requisitorias') {
+    html += `
+      <div class="header-title">⚖️ CONSULTA REQUISITORIAS (e-SINPOL)</div>
+      <div class="header-sub">Sistema de Información Policial — Búsqueda de órdenes de captura</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI / Placa</label>
+          <input type="text" id="qDni" placeholder="Ej: 09659948 u Órden">
+        </div>
+        <div class="query-field">
+          <label>Tipo</label>
+          <select id="qType">
+            <option value="RQ Persona">RQ Persona</option>
+            <option value="RQ Vehículos">RQ Vehículos</option>
+          </select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Requisitorias e-SINPOL')">⌕ Buscar</button>
+      </div>
+    `;
+  } else if(type === 'pnp') {
+    html += `
+      <div class="header-title">⚖️ CONSULTA PERSONAL POLICIAL (PNP / CIP)</div>
+      <div class="header-sub">Consulta si un DNI o CIP pertenece a personal policial activo o retirado</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>Valor (DNI o CIP)</label>
+          <input type="text" id="qDni" placeholder="Ej: 78678760">
+        </div>
+        <div class="query-field">
+          <label>Tipo</label>
+          <select id="qType">
+            <option value="Consulta por DNI">Consulta por DNI</option>
+            <option value="Consulta por CIP">Consulta por CIP</option>
+          </select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Consulta PNP / CIP')">⌕ Buscar</button>
+      </div>
+    `;
+  } else if(type === 'renadespple' || type === 'redam' || type === 'redjum' || type === 'multas_electorales') {
+    let title = "CONSULTA LEGAL";
+    if(type === 'renadespple') title = "RENADESPPLE";
+    if(type === 'redam') title = "REDAM - DEUDORES ALIMENTARIOS";
+    if(type === 'redjum') title = "REDJUM - DEUDORES JUDICIALES MOROSOS";
+    if(type === 'multas_electorales') title = "MULTAS ELECTORALES (JNE)";
+
+    html += `
+      <div class="header-title">⚖️ ${title}</div>
+      <div class="header-sub">Consulta de registros legales y administrativas oficiales</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI a consultar</label>
+          <input type="text" id="qDni" placeholder="Ej: 75178640" maxlength="8" oninput="validateDniInput(this)">
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('${title}')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'vehicular') {
+    html += `
+      <div class="header-title">🚗 CONSULTA VEHICULAR (TIVE / SUNARP)</div>
+      <div class="header-sub">Boletín Informativo, SOAT, Asientos y Revisa Técnica en SUNARP</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>PLACA VEHICULAR</label>
+          <input type="text" id="qPlacaInput" placeholder="Ej: Z1270Q o ABC123">
+        </div>
+        <div class="query-field">
+          <label>TIPO DE CONSULTA</label>
+          <select id="qType">
+            <option value="Datos vehiculares SUNARP">Datos vehiculares SUNARP</option>
+            <option value="TIVE PLANTILLA IMG">TIVE PLANTILLA IMG</option>
+            <option value="TIVE PDF">TIVE PDF</option>
+            <option value="SOAT">SOAT</option>
+          </select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Consulta Vehicular TIVE')">⌕ Buscar</button>
+      </div>
+    `;
+  } else if(type === 'vehicular_siguelo') {
+    html += `
+      <div class="header-title">🚗 SÍGUELO PLUS — VEHICULAR AVANZADO</div>
+      <div class="header-sub">OCR · Propietarios · TIVE · SOAT · Rev. Técnica · Asientos PDF</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>PLACA VEHICULAR</label>
+          <input type="text" id="qPlacaInput" placeholder="Ej: Z1270Q o ABC123">
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Síguelo Plus Vehicular')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'sunarp') {
+    html += `
+      <div class="header-title">🏠 SUNARP - PROPIEDADES & ASIENTOS</div>
+      <div class="header-sub">Búsqueda de bienes inmuebles y partidas registrales</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI o RUC del Titular</label>
+          <input type="text" id="qDni" placeholder="Ej: 75178640">
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('SUNARP Propiedades')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'finanzas' || type === 'infocorp' || type === 'equifax' || type === 'ruc_sunat') {
+    let title = "REPORTE FINANCIERO & DEUDAS";
+    if(type === 'infocorp') title = "INFOCORP REPORTE CREDITICIO";
+    if(type === 'equifax') title = "EQUIFAX REPORTE";
+    if(type === 'ruc_sunat') title = "RUC / SUNAT FICHA";
+
+    html += `
+      <div class="header-title">💳 ${title}</div>
+      <div class="header-sub">Consulta de deudas, historial crediticio y perfil SBS / Experian</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI / RUC</label>
+          <input type="text" id="qDni" placeholder="Ej: 70318551 o RUC 20...">
+        </div>
+        <div class="query-field">
+          <label>Proveedor / Tipo</label>
+          <select id="qType">
+            <option value="Sentinel V3 — Experian + PDF">Sentinel V3 — Experian + PDF</option>
+            <option value="Infocorp Reporte Full">Infocorp Reporte Full</option>
+            <option value="Equifax Consulta">Equifax Consulta</option>
+          </select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('${title}')">⌕ Buscar</button>
+      </div>
+    `;
+  } else if(type === 'receta_medica') {
+    html += `
+      <div class="header-title">🏥 RECETAS MÉDICAS ESPECIALIZADAS</div>
+      <div class="header-sub">Emisión y gestión de recetas médicas autorizadas y digitalizadas</div>
+      <div class="query-grid" style="flex-direction:column;align-items:stretch;">
+        <div class="query-field">
+          <label>DNI / Nombre del Paciente</label>
+          <input type="text" id="qDni" placeholder="Ej: 75178640 o Juan Pérez">
+        </div>
+        <div class="query-field">
+          <label>Medicamento o Diagnóstico Requerido</label>
+          <input type="text" id="qGeneral" placeholder="Ej: Antibióticos, Tratamiento específico...">
+        </div>
+        <div class="btn-group" style="margin-top:12px;">
+          <button class="btn-wa" onclick="sendQueryRequest('Receta Médica')">Solicitar por WhatsApp</button>
+          <button class="btn-tg" onclick="sendQueryRequest('Receta Médica')">Solicitar por Telegram</button>
+        </div>
+      </div>
+    `;
+  } else if(type === 'descanso_medico') {
+    html += `
+      <div class="header-title">🏥 DESCANSOS MÉDICOS JUSTIFICADOS</div>
+      <div class="header-sub">Constancias y certificados de descanso médico validados</div>
+      <div class="query-grid" style="flex-direction:column;align-items:stretch;">
+        <div class="query-field">
+          <label>DNI / Nombre del Paciente</label>
+          <input type="text" id="qDni" placeholder="Ej: 75178640 o Carlos Ramos">
+        </div>
+        <div class="query-field">
+          <label>Días de Descanso Requeridos</label>
+          <input type="text" id="qType" placeholder="Ej: 3 Días / Desde 10 de Octubre">
+        </div>
+        <div class="btn-group" style="margin-top:12px;">
+          <button class="btn-wa" onclick="sendQueryRequest('Descanso Médico')">Pedir por WhatsApp</button>
+          <button class="btn-tg" onclick="sendQueryRequest('Descanso Médico')">Pedir por Telegram</button>
+        </div>
+      </div>
+    `;
+  } else if(type === 'covid_vacuna') {
+    html += `
+      <div class="header-title">💉 COVID-19 / SEGURO / CARNET DE VACUNACIÓN</div>
+      <div class="header-sub">Verificación de dosis, carnet de vacunación y acreditación de seguro</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI del Titular</label>
+          <input type="text" id="qDni" placeholder="Ej: 75178640" maxlength="8" oninput="validateDniInput(this)">
+        </div>
+        <div class="query-field">
+          <label>Tipo de Documento</label>
+          <select id="qType">
+            <option value="Carnet de Vacunación Covid-19">Carnet de Vacunación Covid-19</option>
+            <option value="Acreditación de Seguro ESSALUD/SIS">Acreditación de Seguro ESSALUD/SIS</option>
+          </select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Covid-19 / Carnet / Seguro')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'actas_certificados') {
+    html += `
+      <div class="header-title">📜 ACTAS Y CERTIFICADOS</div>
+      <div class="header-sub">Brevete · Nacimiento · Migraciones · Estudios · Matrimonio · Defunción</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>Número de DNI</label>
+          <input type="text" id="qDni" placeholder="Ej: 27835459" maxlength="8" oninput="validateDniInput(this)">
+        </div>
+        <div class="query-field">
+          <label>Tipo de consulta</label>
+          <select id="qType">
+            <option value="Brevete">Brevete</option>
+            <option value="Acta de nacimiento">Acta de nacimiento</option>
+            <option value="Movimientos migratorios">Movimientos migratorios</option>
+          </select>
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('Actas y Certificados')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'grados_sunedu' || type === 'carnet_universitario' || type === 'certificados_estudios' || type === 'cul_certificado' || type === 'osiptel' || type === 'intg_hogar') {
+    let title = "DOCUMENTOS ACADÉMICOS Y REGISTROS";
+    if(type === 'grados_sunedu') title = "GRADOS ACADÉMICOS (SUNEDU)";
+    if(type === 'carnet_universitario') title = "CARNÉT UNIVERSITARIO";
+    if(type === 'certificados_estudios') title = "CERTIFICADOS DE ESTUDIOS (NOTAS)";
+    if(type === 'cul_certificado') title = "CERTIFICADO ÚNICO LABORAL (CUL / ADULTO)";
+    if(type === 'osiptel') title = "OSIPTEL (LÍNEAS A TU NOMBRE)";
+    if(type === 'intg_hogar') title = "INTG HOGAR (LÍNEAS Y SERVICIOS FIJOS)";
+
+    html += `
+      <div class="header-title">🎓 ${title}</div>
+      <div class="header-sub">Búsqueda rápida en bases de datos nacionales</div>
+      <div class="query-grid">
+        <div class="query-field">
+          <label>DNI del Titular</label>
+          <input type="text" id="qDni" placeholder="Ej: 75178640" maxlength="8" oninput="validateDniInput(this)">
+        </div>
+        <button class="btn-search-action" onclick="sendQueryRequest('${title}')">⌕ Consultar</button>
+      </div>
+    `;
+  } else if(type === 'correo_temporal') {
+    html += `
+      <div class="header-title">✉️ CORREO TEMPORAL SEGURO</div>
+      <div class="header-sub">Generación de correo anónimo — <strong style="color:var(--accent-glow);">S/ 10.00</strong></div>
+      <div class="query-grid" style="flex-direction:column;align-items:stretch;">
+        <div class="query-field">
+          <label>Plataforma objetivo</label>
+          <input type="text" id="qGeneral" placeholder="Ej: Para verificación de cuenta...">
+        </div>
+        <div class="btn-group" style="margin-top:12px;">
+          <button class="btn-wa" onclick="sendQueryRequest('Correo Temporal')">Solicitar por WhatsApp</button>
+          <button class="btn-tg" onclick="sendQueryRequest('Correo Temporal')">Solicitar por Telegram</button>
+        </div>
+      </div>
+    `;
+  } else {
+    html += `
+      <div class="header-title">Consulta Especializada</div>
+      <div class="header-sub">Envía los detalles para procesar tu requerimiento</div>
+      <div class="query-grid" style="flex-direction:column;align-items:stretch;">
+        <div class="query-field">
+          <label>Detalles / Datos</label>
+          <input type="text" id="qGeneral" placeholder="Ingresa la información requerida...">
+        </div>
+        <div class="btn-group" style="margin-top:12px;">
+          <button class="btn-wa" onclick="sendQueryRequest('Servicio Especializado')">Consultar por WhatsApp</button>
+          <button class="btn-tg" onclick="sendQueryRequest('Servicio Especializado')">Consultar por Telegram</button>
+        </div>
+      </div>
+    `;
+  }
+
+  html += `</div>`;
+  calcContent.innerHTML = html;
+  $("calcModal").classList.add("active");
+  $("closeModal").onclick = closeModalFn;
+}
+
+function validateDniInput(input) {
+  input.value = input.value.replace(/\D/g, '');
+  const errElement = $("dniError");
+  if(input.value.length > 0 && input.value.length < 8) {
+    input.classList.add("input-error");
+    if(errElement) errElement.style.display = "block";
+  } else {
+    input.classList.remove("input-error");
+    if(errElement) errElement.style.display = "none";
+  }
+}
+
+function sendQueryRequest(serviceName) {
+  const dniInput = $("qDni");
+  if(dniInput && dniInput.value.length > 0 && dniInput.value.length < 8) {
+    dniInput.classList.add("input-error");
+    if($("dniError")) $("dniError").style.display = "block";
+    return;
+  }
+
+  const lines = [
+    "🔴 *NOCTHRAX | CONSULTA ESPECIALIZADA*",
+    "────────────────────",
+    `📌 *Servicio:* ${serviceName}`
+  ];
+
+  if(dniInput && dniInput.value) lines.push(`📊 *DNI / Valor:* ${dniInput.value}`);
+  if($("qPlacaInput") && $("qPlacaInput").value) lines.push(`🚘 *Placa / VIN:* ${$("qPlacaInput").value}`);
+  if($("qType") && $("qType").value) lines.push(`💎 *Tipo / Formato:* ${$("qType").value}`);
+  if($("qGeneral") && $("qGeneral").value) lines.push(`📝 *Detalles:* ${$("qGeneral").value}`);
+
+  lines.push("────────────────────");
+  lines.push(`📞 *Soporte WhatsApp:* +57 313 5022169`);
+  lines.push(`📢 *Canal Oficial:* ${CFG.channel}`);
+
+  window.open(wa(formatMsg(lines)), "_blank");
+}
+
+function botMsg(){
+  const p=BOTS[pi], s=p.s[si];
+  const u=$("uInput")&&$("uInput").value.trim();
+
+  const lines = [
+    "🔴 *NOCTHRAX | PERÚ*",
+    "────────────────────",
+    `📌 *Servicio:* ${p.n}`,
+    `💎 *Opción / Plan:* ${s[0]}`
+  ];
+
+  if(p.hasCalc) {
+    const arrayPrices = p.priceTable[s[0]];
+    lines.push(`📊 *Cantidad:* ${q}`);
+    lines.push(`💰 *Total ESTIMADO:* ${money(calcPriceFromTable(arrayPrices, q))}`);
+  }
+
+  if(u) lines.push(`🔗 *Detalles / Enlace:* ${u}`);
+
+  lines.push("────────────────────");
+  lines.push(`📢 *Canal Oficial:* ${CFG.channel}`);
+
+  return formatMsg(lines);
+}
+
+function startAutoRotate(){
+  if(window.innerWidth <= 768) return;
+  stopAutoRotate();
+  autoRotateTimer = setInterval(() => {
+    pi = (pi + 1) % BOTS.length;
+    renderCarousel();
+  }, 3200);
+}
+
+function stopAutoRotate(){
+  if(autoRotateTimer) clearInterval(autoRotateTimer);
+}
+
+$("nextBtn").onclick = () => { pi = (pi + 1) % BOTS.length; renderCarousel(); };
+$("prevBtn").onclick = () => { pi = (pi - 1 + BOTS.length) % BOTS.length; renderCarousel(); };
+
+$("cardsStage").addEventListener("click", e => {
+  const card = e.target.closest(".card-3d");
+  if(!card || e.target.classList.contains("c-btn-solicitar")) return;
+  const idx = +card.dataset.index;
+  if(idx === pi) openModal(idx);
+  else { pi = idx; renderCarousel(); }
+});
+
+$("dotsContainer").addEventListener("click", e => {
+  const dot = e.target.closest(".dot");
+  if(!dot) return;
+  pi = +dot.dataset.index; renderCarousel();
+});
+
+function toggleSearch() {
+  const overlay = $("searchOverlay");
+  overlay.classList.toggle("open");
+  if(overlay.classList.contains("open")) {
+    $("searchInput").focus();
+    filterServices();
+  }
+}
+
+function filterServices() {
+  const q = $("searchInput").value.toLowerCase();
+  const resContainer = $("searchResults");
+  const filtered = ALL_SERVICES_MAP.filter(s => s.text.toLowerCase().includes(q));
+  
+  if(filtered.length === 0) {
+    resContainer.innerHTML = `<div style="padding:10px; color:var(--text-muted); font-size:12px;">No se encontraron resultados para "${q}"</div>`;
+  } else {
+    resContainer.innerHTML = filtered.map((item, idx) => `
+      <div class="search-item" data-idx="${idx}">
+        <span>${item.text}</span>
+        <span style="color:var(--accent-glow)">Consulta ➔</span>
+      </div>
+    `).join("");
+
+    resContainer.querySelectorAll('.search-item').forEach((el, i) => {
+      el.onclick = () => {
+        toggleSearch();
+        filtered[i].action();
+      };
+    });
+  }
+}
+
+function openSidebar() { $("sidebar").classList.add("open"); }
+$("closeSidebar").onclick = () => $("sidebar").classList.remove("open");
+function toggleSub(id){ $(id).classList.toggle("open"); }
+
+let touchStartX = 0;
+const stage = $("carouselWrapper");
+stage.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; stopAutoRotate(); }, {passive:true});
+stage.addEventListener('touchend', e => {
+  let diff = e.changedTouches[0].clientX - touchStartX;
+  if(Math.abs(diff) > 40) {
+    if(diff > 0) pi = (pi - 1 + BOTS.length) % BOTS.length;
+    else pi = (pi + 1) % BOTS.length;
+    renderCarousel();
+  }
+  startAutoRotate();
+}, {passive:true});
+
+stage.onmouseenter = stopAutoRotate;
+stage.onmouseleave = startAutoRotate;
+
+$("calcBox").addEventListener("click", e=>{
+  const b = e.target.closest(".plan-card-option, button");
+  if(!b) return;
+  if(b.dataset.j!=null){ si=+b.dataset.j; buildCalc(); }
+  else if(b.dataset.q){ q=+b.dataset.q; if($("qInput")) $("qInput").value=q; updatePriceDisplay(); }
+  else if(b.dataset.act=="wa"){ window.open(wa(botMsg()), "_blank"); }
+  else if(b.dataset.act=="tg"){ window.open(tg(botMsg()), "_blank"); }
+});
+
+$("calcModal").addEventListener("click", e => {
+  if(e.target === $("calcModal")) closeModalFn();
+});
+
+renderCarousel();
+startAutoRotate();
+</script>
+</body>
+</html>
